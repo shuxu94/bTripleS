@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.firebase.client.Firebase;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -13,6 +15,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    Firebase ref = new Firebase("https://myapp.firebaseIO-demo.com/");
 
 
     @Override
